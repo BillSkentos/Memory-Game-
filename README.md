@@ -1,3 +1,9 @@
+#Project Overview 
+
+This a simple project that fetches pokemon data from a public API and displays pokemon as cards on the screen . If you click on a pokemon card the cards are reshuffled and rendered again on the screen and the goal is to click all pokemon pictures once to win . If you click on the same picture twice you lose . 
+Everyything below was generated with Create-React-App .
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
