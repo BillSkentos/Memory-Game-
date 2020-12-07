@@ -1,0 +1,144 @@
+body{
+  overflow-y: hidden;
+}
+
+.nav-container{
+  background-color:black;
+  position: absolute;
+  margin:0;
+  width: 100%;
+  height:auto;
+}
+
+.app-title{
+  color:white;
+  text-align: center;
+}
+
+.scores-container{
+  background-color: brown;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.scores-container > * {
+  margin:5px;
+}
+
+.instructions-button{
+  color:white;
+  background-color:royalblue;
+  border:none;
+  font-size: 20px;
+  padding:10px;
+  border-radius:20px;
+  cursor: pointer;
+  outline: none;
+
+}
+
+.pokemon-list{
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  top:25%;
+  left:2%; 
+}
+
+.poke-card{  /* complete pokemon card */
+  background-color: brown;
+  color:white;
+  text-align: center;
+  margin:10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+ .poke-entry {  /* pokemon picture  */
+  background-color: white;
+  height:150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.poke-name{ /* pokemon name on text   */
+  padding:5px;
+  font-size: 20px;
+}
+
+.modal-box{
+  position: absolute;
+  background-color: white;
+  color:black;
+  top:40%;
+  left:32%;
+  transform: translate(-50% ,-50%);
+  width:35%;
+  height:auto;
+  text-align: center;
+  padding:18px;
+  font-size:25px;
+  font-weight: bold;
+  outline: none;
+}
+
+
+.won{
+  height: 20%;
+  font-size: 25px;
+}
+
+.loading-spinner{
+  position: fixed;
+  left:45%;
+  top:20%;
+}
+
+@media only screen and (max-width:600px){
+  
+  body{
+    overflow-y:auto;
+  }
+
+
+  .scores-container{
+    padding:10px;
+    white-space: nowrap;
+  }
+
+  .scores-container > *{
+    margin:10px;
+    margin-left:5px;
+  }
+
+  .instructions-button{
+    font-size:10px;
+    width:auto;
+  }
+
+  .pokemon-list{
+    left:10%;
+    top:43%;
+    margin-top:15vh;
+  }
+
+  .modal-box{
+    width:9em;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  
+  }
+
+  .loading-spinner{
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+  }
+}
